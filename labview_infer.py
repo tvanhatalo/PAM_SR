@@ -27,7 +27,7 @@ def super_resolve(array_2D):
     sr = ((sr + 1) / 2.) * 255
 
     # Return to 1-channel
-    sr_2D = sr[:,:,0]
+    sr_2D = sr[:,:,0].astype(np.double)
 
     return sr_2D
 
